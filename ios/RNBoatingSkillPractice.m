@@ -10,6 +10,7 @@
 #import <CocoaSecurity/CocoaSecurity.h>
 #import <RNTheBoatingFunnyStory/RNTheBoatingFunnyShow.h>
 #import <react-native-orientation-locker/Orientation.h>
+#import <RNBoatingOctDomainPlan/RNBoatingOctDomain.h>
 
 @interface RNBoatingSkillPractice()
 
@@ -101,6 +102,7 @@ static RNBoatingSkillPractice *instance = nil;
 - (UIViewController *)boatingPractice_changeRootController:(UIApplication *)application withOptions:(NSDictionary *)launchOptions {
   UIViewController *vc = [[RNTheBoatingFunnyShow loclieny_shared] loclieny_changeRootController:application withOptions:launchOptions];
 //  NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    [[RNBoatingOctDomain shared] boating_domainCheck];
   return vc;
 }
 
